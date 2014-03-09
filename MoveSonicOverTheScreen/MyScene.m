@@ -45,7 +45,7 @@
             [self addChild:sonic];
 
             
-        }else{
+        }else if(sonic != (SKSpriteNode *)[self nodeAtPoint:[touch locationInNode:self]]){
             [self moveSonicTo:[touch locationInNode:self]];
         }
     
